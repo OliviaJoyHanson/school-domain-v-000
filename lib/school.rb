@@ -13,4 +13,8 @@ class School
     (ROSTER << {:grade => [student_name]}).flatten
   end
 
+  def clear_roster
+    ROSTER = []
+  end
+
 end
