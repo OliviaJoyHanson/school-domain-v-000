@@ -11,7 +11,7 @@ class School
   def add_student(student_names, grade)
     student_array = student_names.split
     @roster[grade] = []
-    @roster[grade] << student_name
+    @roster[grade] << student_array
   end
 
 
