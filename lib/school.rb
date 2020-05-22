@@ -4,13 +4,13 @@ class School
   attr_reader :school_name
 
   ROSTER = []
-  def clear_roster
+  def self.clear_roster
     ROSTER = []
   end
 
   def initialize(name)
     @school_name = name
-    clear_roster
+    self.clear_roster
   end
 
   def add_student(student_name, grade)
