@@ -9,7 +9,7 @@ class School
   end
 
   def roster
-    ROSTER = Hash.new
+    Hash.new
   end
 
   def add_student(student_name, grade)
