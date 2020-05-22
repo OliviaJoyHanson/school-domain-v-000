@@ -5,6 +5,7 @@ class School
 
   def initialize(name)
     @school_name = name
+    roster
   end
 
   def roster
