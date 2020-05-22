@@ -4,6 +4,9 @@ class School
   attr_reader :school_name
 
   ROSTER = []
+  def clear_roster
+    ROSTER = []
+  end
 
   def initialize(name)
     @school_name = name
@@ -14,8 +17,6 @@ class School
     (ROSTER << {:grade => [student_name]}).flatten
   end
 
-  def clear_roster
-    ROSTER = []
-  end
+
 
 end
