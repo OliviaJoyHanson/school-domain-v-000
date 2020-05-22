@@ -3,9 +3,9 @@ class School
   attr_accessor
   attr_reader :school_name
 
-  ROSTER = []
+  ROSTER = {}
   def self.clear_roster
-    ROSTER = []
+    ROSTER = {}
   end
 
   def initialize(name)
@@ -14,7 +14,8 @@ class School
   end
 
   def add_student(student_name, grade)
-    (ROSTER << {:grade => [student_name]}).flatten
+    ROSTER[grade] = []
+    ROSTER[grade] << student_name
   end
 
 
