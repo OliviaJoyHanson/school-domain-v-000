@@ -10,7 +10,7 @@ class School
   end
 
   def add_student(student_name, grade)
-    ROSTER << {:grade => [student_name]
+    ROSTER << {:grade => [student_name]}
   end
 
 end
